@@ -1,4 +1,5 @@
 const db = require("./db")
+const bcrypt = require("bcryptjs")
 
 // Vide les tables
 db.exec(`
@@ -34,3 +35,9 @@ db.prepare("INSERT INTO factures (order_id, numero, date, total, status) VALUES 
 db.prepare("INSERT INTO factures (order_id, numero, date, total, status) VALUES (?, ?, ?, ?, ?)").run(o2.lastInsertRowid, "FAC-2026-0002", "01/06/2026", 300, "payée")
 
 console.log("✅ Seed terminé")
+
+// Dans seed.js — ajoute à la fin
+
+const hash = bcrypt.hashSync("admin123", 10)
+db.prepare("INSERT OR IGNORE INTO users (email, password) VALUES (?, ?)").run("admin@test.fr", hash)
+console.log("✅ Admin créé")
