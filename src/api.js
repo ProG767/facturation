@@ -1,4 +1,4 @@
-const BASE = "http://localhost:3001/api"
+const BASE = "https://facturation.go-mi.com/api"
 
 const getHeaders = () => {
   const token = localStorage.getItem("token")
