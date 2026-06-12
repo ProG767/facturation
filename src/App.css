@@ -170,3 +170,32 @@ li {
 /* Titres */
 h1 { font-size: 24px; margin-bottom: 20px; font-weight: 600; }
 h2 { font-size: 18px; margin: 20px 0 10px; font-weight: 600; }
+
+
+@media (max-width: 768px) {
+  .nav {
+    padding: 0 15px;
+  }
+
+  .nav nav {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px 0;
+    gap: 10px;
+  }
+
+  .nav nav button {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .page {
+    padding: 0 12px;
+    margin: 15px auto;
+  }
+
+  li {
+    flex-wrap: wrap;
+  }
+}
