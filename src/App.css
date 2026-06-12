@@ -135,5 +135,4 @@ h2 { font-size: 18px; margin: 20px 0 10px; font-weight: 600; }
   .page { padding: 0 12px; margin: 15px auto; }
   .facture-actions { flex-direction: column; align-items: flex-start; }
   li { flex-wrap: wrap; }
-  iframe { display: none; }
 }
