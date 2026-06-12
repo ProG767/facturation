@@ -105,17 +105,19 @@ code {
     margin: 15px auto;
   }
 
- .nav nav {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  height: 50px;
-  justify-content: space-between;  /* ← ajoute cette ligne */
+   .nav nav {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 8px 0;
+    justify-content: flex-start;
   }
 
-  .nav nav button {
-    margin-left: auto;  /* ← pousse le bouton à droite */
+    .nav nav button {
+    margin-left: 0;
+    margin-top: 5px;
+    width: 100%;
   }
+
   .nav nav a {
     font-size: 13px;
   }
