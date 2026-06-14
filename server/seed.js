@@ -36,8 +36,8 @@ db.prepare("INSERT INTO factures (order_id, numero, date, total, status) VALUES 
 
 console.log("✅ Seed terminé")
 
-// Dans seed.js — ajoute à la fin
 
+// Admin
 const hash = bcrypt.hashSync("admin123", 10)
 db.prepare("INSERT OR IGNORE INTO users (email, password) VALUES (?, ?)").run("admin@test.fr", hash)
 console.log("✅ Admin créé")

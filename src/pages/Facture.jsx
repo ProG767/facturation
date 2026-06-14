@@ -117,8 +117,8 @@ function handleDownloadXML() {
           rows={6}
           style={{ width: "100%", padding: "8px 12px", border: "1px solid #ddd", borderRadius: 4, fontSize: 14, marginBottom: 10 }}
         />
-        <button onClick={handleSendMail}>Envoyer</button>
-        <button onClick={handleDownloadXML}>Télécharger Factur-X XML</button>
+        <button onClick={handleSendMail} className="btn-small">Envoyer</button>
+        <button onClick={handleDownloadXML} className="btn-small">Télécharger Factur-X XML</button>
       </div>
     </div>
   )
